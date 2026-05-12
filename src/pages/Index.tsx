@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import Icon from "@/components/ui/icon";
 
+const LOGO_IMG = "https://cdn.poehali.dev/projects/95e4f42a-0a51-4847-a79e-bedf14b4ad03/bucket/10425542-e532-49fe-ae3a-b21941f373b8.png";
 const HERO_IMG = "https://cdn.poehali.dev/projects/95e4f42a-0a51-4847-a79e-bedf14b4ad03/files/328c0fba-fdf4-4969-82a2-4c35ef99a430.jpg";
 const WORKSHOP_IMG = "https://cdn.poehali.dev/projects/95e4f42a-0a51-4847-a79e-bedf14b4ad03/files/cca37c2e-47b6-471b-b195-2a98e49ce474.jpg";
 const COLLECTION_IMG = "https://cdn.poehali.dev/projects/95e4f42a-0a51-4847-a79e-bedf14b4ad03/files/e8868927-b7d3-491a-bdf6-6e9d36f8aa22.jpg";
@@ -117,20 +118,25 @@ export default function Index() {
           <a
             href="#home"
             onClick={(e) => { e.preventDefault(); scrollTo("#home"); }}
-            className="flex items-center gap-2"
+            className="flex items-center"
           >
-            <span style={{ fontSize: "1.5rem" }}>🪵</span>
+            <img
+              src={LOGO_IMG}
+              alt="MyWOOD Kostroma"
+              style={{ height: "44px", width: "44px", objectFit: "contain", borderRadius: "50%", background: "#fff", boxShadow: scrolled ? "none" : "0 2px 12px rgba(0,0,0,0.18)" }}
+            />
             <span
               style={{
                 fontFamily: "'Cormorant Garamond', serif",
-                fontSize: "1.4rem",
+                fontSize: "1.3rem",
                 fontWeight: 600,
                 color: scrolled ? "var(--wood-dark)" : "var(--cream)",
-                letterSpacing: "0.02em",
+                letterSpacing: "0.04em",
                 transition: "color 0.3s",
+                marginLeft: "0.6rem",
               }}
             >
-              ДревоМастер
+              MyWOOD <span style={{ color: "var(--gold)", fontWeight: 400, fontSize: "1rem" }}>Kostroma</span>
             </span>
           </a>
 
@@ -462,10 +468,12 @@ export default function Index() {
       <footer style={{ background: "var(--wood-dark)", borderTop: "3px solid var(--gold)", color: "rgba(240,228,204,0.55)" }} className="py-8 px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <span style={{ fontSize: "1.2rem" }}>🪵</span>
-            <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.2rem", fontWeight: 600, color: "var(--cream)" }}>ДревоМастер</span>
+            <img src={LOGO_IMG} alt="MyWOOD Kostroma" style={{ height: "36px", width: "36px", objectFit: "contain", borderRadius: "50%", background: "#fff" }} />
+            <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.2rem", fontWeight: 600, color: "var(--cream)" }}>
+              MyWOOD <span style={{ color: "var(--gold)", fontWeight: 400, fontSize: "0.95rem" }}>Kostroma</span>
+            </span>
           </div>
-          <p style={{ fontSize: "0.8rem", textAlign: "center" }}>© 2024 ДревоМастер. Авторские изделия из дерева ручной работы.</p>
+          <p style={{ fontSize: "0.8rem", textAlign: "center" }}>© 2024 MyWOOD Kostroma. Авторские изделия из дерева ручной работы.</p>
           <nav className="flex gap-6 flex-wrap justify-center">
             {NAV_ITEMS.slice(1).map((item) => (
               <a
