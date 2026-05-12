@@ -124,7 +124,7 @@ export default function Index() {
                 marginLeft: "0.6rem",
               }}
             >
-              MyWOOD <span style={{ color: "var(--gold)", fontWeight: 400, fontSize: "1rem" }}>Kostroma</span>
+              МоёДерево <span style={{ color: "var(--gold)", fontWeight: 400, fontSize: "0.9rem", letterSpacing: "0.12em", textTransform: "uppercase" }}>Кострома</span>
             </span>
           </a>
 
@@ -458,10 +458,10 @@ export default function Index() {
           <div className="flex items-center gap-2">
             <img src={LOGO_IMG} alt="MyWOOD Kostroma" style={{ height: "36px", width: "36px", objectFit: "contain", borderRadius: "50%", background: "#fff" }} />
             <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.2rem", fontWeight: 600, color: "var(--cream)" }}>
-              MyWOOD <span style={{ color: "var(--gold)", fontWeight: 400, fontSize: "0.95rem" }}>Kostroma</span>
+              МоёДерево <span style={{ color: "var(--gold)", fontWeight: 400, fontSize: "0.85rem", letterSpacing: "0.12em", textTransform: "uppercase" }}>Кострома</span>
             </span>
           </div>
-          <p style={{ fontSize: "0.8rem", textAlign: "center" }}>© 2024 MyWOOD Kostroma. Авторские изделия из дерева ручной работы.</p>
+          <p style={{ fontSize: "0.8rem", textAlign: "center" }}>© 2024 МоёДерево Кострома. Авторские изделия из дерева ручной работы.</p>
           <nav className="flex gap-6 flex-wrap justify-center">
             {NAV_ITEMS.slice(1).map((item) => (
               <a
