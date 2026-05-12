@@ -49,9 +49,6 @@ const PORTFOLIO_ITEMS = [
   { img: "https://cdn.poehali.dev/projects/95e4f42a-0a51-4847-a79e-bedf14b4ad03/bucket/8cd7d053-9eec-46bb-bbc1-a26ab62d818b.jpg", title: "Менажница из ясеня", size: "Ø 30 см" },
   { img: "https://cdn.poehali.dev/projects/95e4f42a-0a51-4847-a79e-bedf14b4ad03/bucket/06c48f07-d60e-4538-a708-f21148dc8a03.jpg", title: "Столик винный", size: "Высота 12,5 см" },
   { img: "https://cdn.poehali.dev/projects/95e4f42a-0a51-4847-a79e-bedf14b4ad03/bucket/f3b63da9-3ac5-4fb6-bc0e-2984ad12cb58.jpg", title: "Набор досок", size: "3 размера" },
-  { img: "https://cdn.poehali.dev/projects/95e4f42a-0a51-4847-a79e-bedf14b4ad03/bucket/8cd7d053-9eec-46bb-bbc1-a26ab62d818b.jpg", title: "Сервировка из дуба", size: "Массив дуба" },
-  { img: "https://cdn.poehali.dev/projects/95e4f42a-0a51-4847-a79e-bedf14b4ad03/bucket/06c48f07-d60e-4538-a708-f21148dc8a03.jpg", title: "Подарочный столик", size: "Складные ножки" },
-  { img: "https://cdn.poehali.dev/projects/95e4f42a-0a51-4847-a79e-bedf14b4ad03/bucket/f3b63da9-3ac5-4fb6-bc0e-2984ad12cb58.jpg", title: "Разделочные доски", size: "34×24 см" },
 ];
 
 function useInView(threshold = 0.15) {
