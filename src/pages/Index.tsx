@@ -317,11 +317,11 @@ export default function Index() {
                 Каждая менажница, доска или лоток проходит через наши руки от заготовки до финишной обработки маслом и воском.
               </p>
               <p style={{ color: "var(--wood-mid)", lineHeight: 1.8, fontSize: "1rem", marginBottom: "2rem" }}>
-                Работаем с лучшими породами: ясень, орех, дуб, вишня, клён.
-                Дерево — живой материал, и в каждом изделии сохраняется его уникальный рисунок.
+                Дерево — живой экологичный материал, и в каждом изделии сохраняется его уникальный природный рисунок.
+                Никакой химии — только натуральные масла и воск.
               </p>
               <div className="grid grid-cols-3 gap-6">
-                {[{ num: "5+", label: "Лет опыта" }, { num: "500+", label: "Изделий создано" }, { num: "5", label: "Пород дерева" }].map((s) => (
+                {[{ num: "5+", label: "Лет опыта" }, { num: "500+", label: "Изделий создано" }, { num: "100%", label: "Экологично" }].map((s) => (
                   <div key={s.label}>
                     <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.5rem", fontWeight: 700, color: "var(--wood-dark)", lineHeight: 1 }}>{s.num}</div>
                     <div style={{ fontSize: "0.8rem", color: "var(--wood-light)", marginTop: "0.25rem" }}>{s.label}</div>
